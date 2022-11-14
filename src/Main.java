@@ -1,57 +1,78 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 100;
-        byte b = 1;
-        short c = 170;
-        long d = 200;
-        double e = 0.3;
-        double f = 1.002;
+        // Задача 1
+        System.out.println("Задача 1");
+        int a = 0;
         System.out.println("Значение пременной а с типом int равно " + a );
+        byte b = 1;
         System.out.println("Значение пременной b с типом byte равно " + b );
+        short c = 170;
         System.out.println("Значение пременной c с типом short равно " + c );
+        long d = 7500000000L;
         System.out.println("Значение пременной d с типом long равно " + d );
-        System.out.println("Значение пременной e с типом double равно " + e );
+        float e = 3.151592f;
+        System.out.println("Значение пременной e с типом float равно " + e );
+        double f = 2.828;
         System.out.println("Значение пременной f с типом double равно " + f );
 
-        double one = 27.12;
-        long two = 987678965;
-        byte three = 2;
-        short four = 768;
+        // Задача 2
+        System.out.println("Задача 2");
+
+        float one = 27.12f;
+        long two = 98767896549L;
+        double three = 2.786;
+        boolean five = false;
+        char four = 569;
+        short six = -159;
+        int seven = 27897;
+        byte eight = 67;
         System.out.println (one);
         System.out.println (two);
         System.out.println (three);
         System.out.println (four);
+        System.out.println (five);
+        System.out.println (six);
+        System.out.println (seven);
 
-        var lpStudents = 23;
-        var asStudents = 27;
-        var eaStudents = 30;
-        var totalStudents = lpStudents + asStudents + eaStudents;
-        var paper = 480;
-        var paperPerStudent = totalStudents % paper;
+        // Задача 3
+        System.out.println("Задача 3");
+
+        int lpStudents = 23;
+        int asStudents = 27;
+        int eaStudents = 30;
+        int totalStudents = lpStudents + asStudents + eaStudents;
+        int paper = 480;
+        int paperPerStudent = paper / totalStudents;
         System.out.println ("На каждого ученика  рассчитано " + paperPerStudent + " листов бумаги");
 
-        var efficiencyBottleMachinePerBaseTime = 16;
-        var baseTime = 2;
-        var efficiencyBottleMachine = efficiencyBottleMachinePerBaseTime / baseTime;
-        var twentyMin = 20;
-        var effiiciencyPerTwentyMin = efficiencyBottleMachine * twentyMin;
-        System.out.println ("За " + twentyMin + " минут машина произвела бутылок " + effiiciencyPerTwentyMin + " штук");
-        var day = 1440;
-        var efficiencyPerDay = efficiencyBottleMachine * day;
-        System.out.println ("За " + day + " минут машина произвела бутылок " + efficiencyPerDay + " штук");
-        var threeDays = 4320;
-        var efficiencyPerThreeDays = efficiencyBottleMachine * day;
-        System.out.println ("За " + threeDays + " минут машина произвела бутылок " + efficiencyPerThreeDays + " штук");
-        var month = 43200;
-        var efficiencyPerMonth = efficiencyBottleMachine * month;
-        System.out.println ("За " + month + " минут машина произвела бутылок " + efficiencyPerMonth + " штук");
+        // Задача 4
+        System.out.println("Задача 4");
 
-        var totalPaint = 120;
-        var whitePaintPerClass = 2;
-        var brownPaintPerClass = 4;
-        var classes = totalPaint / (whitePaintPerClass+brownPaintPerClass);
-        var whitePaintTotal = classes * whitePaintPerClass;
-        var brownPaintTotal = classes * brownPaintPerClass;
+        int efficiencyBottleMachinePerBaseTime = 16;
+        int baseTime = 2;
+        int efficiencyBottleMachine = efficiencyBottleMachinePerBaseTime / baseTime;
+        int twentyMin = 20;
+        int effiiciencyPerTwentyMin = efficiencyBottleMachine * twentyMin;
+        System.out.println ("За " + twentyMin + " минут машина произвела бутылок " + effiiciencyPerTwentyMin + " штук");
+        int day = 1440;
+        int efficiencyPerDay = efficiencyBottleMachine * day;
+        System.out.println ("За день машина произвела бутылок " + efficiencyPerDay + " штук");
+        int threeDays = 4320;
+        int efficiencyPerThreeDays = efficiencyBottleMachine * day;
+        System.out.println ("За три дня машина произвела бутылок " + efficiencyPerThreeDays + " штук");
+        int month = 43200;
+        int efficiencyPerMonth = efficiencyBottleMachine * month;
+        System.out.println ("За месяц машина произвела бутылок " + efficiencyPerMonth + " штук");
+
+        // Задача 5
+        System.out.println("Задача 5");
+
+        int totalPaint = 120;
+        int whitePaintPerClass = 2;
+        int brownPaintPerClass = 4;
+        int classes = totalPaint / (whitePaintPerClass+brownPaintPerClass);
+        int whitePaintTotal = classes * whitePaintPerClass;
+        int brownPaintTotal = classes * brownPaintPerClass;
         System.out.println ("В школе, где " + classes + " классов, нужно " + whitePaintTotal + " банок белой краски и " + brownPaintTotal + " банок коричневой краски");
 
         float banana = 5;
